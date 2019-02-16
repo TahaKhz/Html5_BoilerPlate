@@ -1,7 +1,47 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html,body{
-    margin: 0;
-    padding: 0;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.brandname {
+  display: none;
+}
+
+.price {
+  display: none;
+}
+
+article {
+  text-align: center;
+  padding-bottom: 20px;
+  display: none;
+}
+
+article a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #FF6961;
+  transition: all 1s;
+  width: 100%;
+}
+
+article a:hover {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#cookie {
+  background: #231F20;  
+  text-align: center;
+  color: #7561DD;  
+  font-size: 30px;
+  height: 500px;
+  padding-top:100px;    
+}
+#cookie p {  
+  word-break: break-all;
 }
