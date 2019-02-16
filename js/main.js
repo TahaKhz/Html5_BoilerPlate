@@ -1,3 +1,13 @@
+function GetStorage() {
+  let result = 0;
+  if (typeof localStorage.getItem("Close_app_Suggestion") !== "undefined")
+    result = localStorage.getItem("Close_app_Suggestion");  
+  return result;
+}
+$(document).on("click", "#CloseSuggestion", function() {  
+  $("#SuggestionForMobileApp").remove();
+  localStorage.setItem("Close_app_Suggestion", "1");
+});
 function DetectMobile() {
   if (
     navigator.userAgent.match(/Android/i) ||
@@ -38,22 +48,25 @@ function BuildDownloadUrl() {
 }
 function BuildHtml() {
   let result =
-    '<div style="height: 50px;">' +
+    '<div id="SuggestionForMobileApp" style="height: 50px;">' +
     '<div style="position: absolute;width: 100%;top: 53px;padding: 0;font-size: 15px;padding: 8px;color: rgba(255,111,104,0.7);">' +
-    '<p>'+
-    '<i class="close icon-navigate_cross" style="position:relative;float: right;font-size: 30px;margin-left: 10px;margin-top: -10px;"></i>'+
-    'با دانلود اپلیکیشن آسان تر خرید کنید .' +
-    '<a href="'+BuildDownloadUrl()+'">' +
+    "<p>" +
+    '<i id="CloseSuggestion" class="close icon-navigate_cross" style="cursor:pointer;position:relative;float: right;font-size: 30px;margin-left: 10px;margin-top: -10px;"></i>' +
+    "با دانلود اپلیکیشن آسان تر خرید کنید ." +
+    '<a style="cursor:pointer !important;" href="' +
+    BuildDownloadUrl() +
+    '">' +
     '<img src="/content/files/content/favicon.png" style="height: 35px;float: left;margin-left: 20px;margin-bottom: 10px;margin-top: -5px;border: 1px solid;padding: 3px;border-radius: 5px;">' +
-    '</a>' +
-    '</p>' +
-    '</div>' +
-    '</div>';
+    "</a>" +
+    "</p>" +
+    "</div>" +
+    "</div>";
   return result;
 }
 function SuggestApp() {
   $("body").prepend(BuildHtml());
 }
 $(function() {
-  if (DetectMobile()) SuggestApp();
+  if (DetectMobile())
+    if (GetStorage() != "1") SuggestApp();
 });
