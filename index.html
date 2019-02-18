@@ -1,105 +1,170 @@
 <!DOCTYPE html>
-<html>    
-    <head>
-    <meta charset="utf-8">
+<html>
+  <head>
+    <meta charset="utf-8" />
     <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
 
     The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
 
     The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google typically displays the first 50–60 characters of a title tag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Google typically displays the first 50–60 characters of a title tag
+    </title>
     <!--You can achieve a good compatibility with:
     favicon.ico, for browsers.
     A 192x192 PNG icon for Android Chrome
     A 180x180 Apple Touch icon (for iPhone 6 Plus; other device will scale it down as needed)-->
-    <link rel="shortcut icon" href="/path/to/icons/favicon.ico">
-    <link rel="icon" type="image/png" href="/path/to/icons/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="180x180" href="/path/to/icons/apple-touch-icon-180x180.png">   
+    <link rel="shortcut icon" href="/path/to/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/path/to/icons/favicon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/path/to/icons/apple-touch-icon-180x180.png"
+    />
     <!--The rel=canonical element, often called the “canonical link”, is an HTML element that helps webmasters prevent duplicate content issues. It does this by specifying the “canonical URL”, the “preferred” version of a web page – the original source, even. Using it well improves a site's SEO-->
-    <link rel="canonical" href="http://www.example.com/index.html">
+    <link rel="canonical" href="http://www.example.com/index.html" />
     <!--This meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--The http-equiv attribute can be used to simulate an HTTP response header. If you need a header with another type just define it-->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="This Should be limited to 290 characters">    
-    <meta name="keywords" content="This Sould Be Between 70 to 160 characters">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="description"
+      content="This Should be limited to 290 characters"
+    />
+    <meta
+      name="keywords"
+      content="This Sould Be Between 70 to 160 characters"
+    />
     <!--Robots meta directives (sometimes called “meta tags”) are pieces of code that provide crawlers instructions for how to crawl or index web page content-->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
     <!--By using this so called REVISIT-AFTER meta tag you can tell the spider to come back to your website and index it again-->
-    <meta name="revisit-after" content="1 days">
+    <meta name="revisit-after" content="1 days" />
     <!--The meta tag abstract can be used to indicate in just a very short sentence what the web-page is about.-->
-    <meta name="abstract" content="Personal Website">
-    <meta name="author" content="Taha Khazaee">
-    <meta name="copyright" content="All Rights Reserved for Taha Khazaee">
-    <meta name="distribution" content="global">    
-    <meta name="language" content="english">
-    <meta name="reply-to" content="info@tahakhz.com">
-    <meta name="web_author" content="Taha Khazaee">
+    <meta name="abstract" content="Personal Website" />
+    <meta name="author" content="Taha Khazaee" />
+    <meta name="copyright" content="All Rights Reserved for Taha Khazaee" />
+    <meta name="distribution" content="global" />
+    <meta name="language" content="english" />
+    <meta name="reply-to" content="info@tahakhz.com" />
+    <meta name="web_author" content="Taha Khazaee" />
     <!--Dublin Core is an initiative to create a digital "library card catalog" for the Web-->
-    <meta name="dc.language" content="UK">
-    <meta name="dc.source" content="Site Url">
-    <meta name="dc.title" content="Same as before">
-    <meta name="dc.keywords" content="Same as before">
-    <meta name="dc.subject" content="">
-    <meta name="dc.description" content="Same as before">
+    <meta name="dc.language" content="UK" />
+    <meta name="dc.source" content="Site Url" />
+    <meta name="dc.title" content="Same as before" />
+    <meta name="dc.keywords" content="Same as before" />
+    <meta name="dc.subject" content="" />
+    <meta name="dc.description" content="Same as before" />
     <!--The open graph protocol allows developers to leverage Facebook in new and exciting ways.-->
-    <meta property="og:title" content="Same as before">
-    <meta property="og:description" content="Same as before">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="Site Url">
-    <meta property="og:image" content="Image in facebbok share url">
+    <meta property="og:title" content="Same as before" />
+    <meta property="og:description" content="Same as before" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Site Url" />
+    <meta property="og:image" content="Image in facebbok share url" />
     <!--About Twitter Cards. With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website.-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@tahakhz">
-    <meta name="twitter:creator" content="@tahakhz">
-    <meta name="twitter:title" content="Taha Khazaee : Web Developer &amp; SEO Analizer - Iran">
-    <meta name="twitter:description" content="Web Designer &amp; SEO enthusiast From Karaj-Iran.Born 1992 In Beautiful Nowshahr-mazandaran,Computer Software Engineer(USC-Tehran) &amp; Classic Rock Fan.">
-    <meta name="twitter:image" content="http://www.tahakhz.com/images/Signature.png">    
-    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tahakhz" />
+    <meta name="twitter:creator" content="@tahakhz" />
+    <meta
+      name="twitter:title"
+      content="Taha Khazaee : Web Developer &amp; SEO Analizer - Iran"
+    />
+    <meta
+      name="twitter:description"
+      content="Web Designer &amp; SEO enthusiast From Karaj-Iran.Born 1992 In Beautiful Nowshahr-mazandaran,Computer Software Engineer(USC-Tehran) &amp; Classic Rock Fan."
+    />
+    <meta
+      name="twitter:image"
+      content="http://www.tahakhz.com/images/Signature.png"
+    />
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
+    ><![endif]-->
     <!-- Google analytics-->
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>    
+    <script
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
     <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-102688445-2', 'auto');
-        ga('send', 'pageview');
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-102688445-2", "auto");
+      ga("send", "pageview");
     </script>
     <!--CDN Css rendered-->
     <!--Bootsrap-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+      crossorigin="anonymous"
+    />
     <!--FontAwesome-->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!--Plugins Css rendered-->  
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!--Plugins Css rendered-->
     <!--reset-->
-    <link href="css/plugins/reset.css" rel="stylesheet"> 
+    <link href="css/plugins/reset.css" rel="stylesheet" />
     <!--Site Css rendered-->
-    <!--Main-->    
-    <link href="css/main.css" rel="stylesheet">                        
-</head>          
-    <body>
-        <!--This Tag contains your header contents-->
-        <header></header>
-        <!--This tag contains your main contents-->
-        <main></main>
-        <!--This tag contains your footer contents-->
-        <footer></footer>
-        <!--CDN js rendered-->
-        <!--Jquery-->
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-        <!--Bootsrap-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js" integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC" crossorigin="anonymous"></script>
-        <!--Plugins js rendered-->  
-        <!--Site js rendered-->
-        <!--Main-->
-         <script src="js/main.js"></script>
-    </body>
+    <!--Main-->
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--This Tag contains your header contents-->
+    <header></header>
+    <!--This tag contains your main contents-->
+    <main class="paragraph">
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+      طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+      که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+      بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+      و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت
+      بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در
+      زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود
+      در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+      حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+      اساسا مورد استفاده قرار گیرد.
+    </main>
+    <!--This tag contains your footer contents-->
+    <footer></footer>
+    <!--CDN js rendered-->
+    <!--Jquery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!--Bootsrap-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"
+      integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC"
+      crossorigin="anonymous"
+    ></script>
+    <!--Plugins js rendered-->
+    <!--Site js rendered-->
+    <!--Main-->
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -1,7 +1,19 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: IranSansDN;
+    src: url('../assets/fonts/IRANSansDN.ttf');
+  }
 html,body{
     margin: 0;
     padding: 0;
+    font-family: IranSansDn ,sans-serif;
+}
+.paragraph{    
+    margin: 15% 25%;
+    line-height: 1.5;
+    direction: rtl;
+    text-align: justify;
+    font-size: 18px;
 }
