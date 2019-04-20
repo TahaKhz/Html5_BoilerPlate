@@ -8,7 +8,7 @@
 
     The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google typically displays the first 50–60 characters of a title tag</title>
+    <title>Are You Remote?!</title>
     <!--You can achieve a good compatibility with:
     favicon.ico, for browsers.
     A 192x192 PNG icon for Android Chrome
@@ -82,24 +82,38 @@
     <!--reset-->
     <link href="css/plugins/reset.css" rel="stylesheet"> 
     <!--Site Css rendered-->
-    <!--Main-->    
-    <link href="css/main.css" rel="stylesheet">                        
-</head>          
-    <body>
-        <!--This Tag contains your header contents-->
-        <header></header>
-        <!--This tag contains your main contents-->
-        <main></main>
-        <!--This tag contains your footer contents-->
-        <footer></footer>
-        <!--CDN js rendered-->
-        <!--Jquery-->
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-        <!--Bootsrap-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js" integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC" crossorigin="anonymous"></script>
-        <!--Plugins js rendered-->  
-        <!--Site js rendered-->
-        <!--Main-->
-         <script src="js/main.js"></script>
-    </body>
+    <!--Main-->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--This Tag contains your header contents-->
+    <header></header>
+    <!--This tag contains your main contents-->
+    <main>
+        <p class="btn-switch">
+            <input type="radio" id="yes" name="switch" class="btn-switch__radio btn-switch__radio_yes" />
+            <input type="radio" checked id="no" name="switch" class="btn-switch__radio btn-switch__radio_no" />
+            <label for="yes" class="btn-switch__label btn-switch__label_yes">
+                <span class="btn-switch__txt">Occupied</span>
+            </label>
+            <label for="no" class="btn-switch__label btn-switch__label_no">
+                <span class="btn-switch__txt">Free</span>
+            </label>
+        </p>
+    </main>
+    <!--This tag contains your footer contents-->
+    <footer></footer>
+    <!--CDN js rendered-->
+    <!--Jquery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!--Bootsrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js" integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC"
+        crossorigin="anonymous"></script>
+    <!--Plugins js rendered-->
+    <!--Site js rendered-->
+    <!--Main-->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
